@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="  Sửa thông tin  " android:id="@+id/ppSua"/>
+    <item android:title="  Hỗ trợ  " android:id="@+id/ppHotro"/>
+    <item android:title="  Đổi mật khẩu  " android:id="@+id/ppdoimk"/>
+    <item android:title="  Đăng xuất  " android:id="@+id/ppDangxuat"/>
+</menu>

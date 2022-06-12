@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/activity_dang_ky.xml" value="0.17916666666666667" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/activity_gio_hang.xml" value="0.18" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/activity_home.xml" value="0.17916666666666667" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/activity_main.xml" value="0.17916666666666667" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/activity_thong_tin_linh_kien.xml" value="0.36666666666666664" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/dong_danh_muc.xml" value="0.17916666666666667" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/dong_lich_su.xml" value="0.17916666666666667" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/dong_linh_kien.xml" value="0.17916666666666667" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/fragment_lich_su.xml" value="0.17916666666666667" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/fragment_trang_ca_nhan.xml" value="0.17916666666666667" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/fragment_trang_chu.xml" value="0.17916666666666667" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/linh_kien_trong_gio.xml" value="0.17916666666666667" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/nhap_thong_tin.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/drawable-v24/bo_vien.xml" value="0.190625" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/drawable-v24/ic_back.xml" value="0.190625" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/drawable-v24/vien.xml" value="0.190625" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.190625" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" value="0.190625" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.190625" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.190625" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.190625" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/drawable/ic_launcher_background.xml" value="0.190625" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/activity_dang_ky.xml" value="0.18" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/activity_gio_hang.xml" value="0.22" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/activity_home.xml" value="0.18" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/activity_thong_tin_linh_kien.xml" value="0.22" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/activity_tim_kiem.xml" value="0.18" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/content_dang_ky.xml" value="0.1" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/dangky.xml" value="0.1" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/dong_danh_muc.xml" value="0.75" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/dong_lich_su.xml" value="0.22" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/dong_linh_kien.xml" value="0.18" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/fragment_first.xml" value="0.1" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/fragment_gio_hang.xml" value="0.25" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/fragment_lich_su.xml" value="0.22" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/fragment_second.xml" value="0.1" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/fragment_trang_ca_nhan.xml" value="0.18" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/fragment_trang_chu.xml" value="0.1" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/linh_kien_trong_gio.xml" value="0.1" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/layout/nhap_thong_tin.xml" value="0.25" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/menu/bo_vien.xml" value="0.17447916666666666" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/menu/menu_navigation.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/menu/menu_popup.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/menu/vien.xml" value="0.17447916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.18" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

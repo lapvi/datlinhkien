@@ -25,6 +25,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import Model.DanhMuc;
+import Model.TaiKhoan;
 
 public class MainActivity extends AppCompatActivity {
     EditText edtname;
@@ -33,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     Button btdangnhap;
     CheckBox cbremember;
     SharedPreferences sharedPreferences;
-    public int mataikhoan=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,10 +75,9 @@ public class MainActivity extends AppCompatActivity {
                                                 tendangnhap = jsonObject.getString("tendangnhap");
                                                 matkhau = jsonObject.getString("matkhau");
                                                 if(usename.equals(tendangnhap)&&password.equals(matkhau)){
-                                                    mataikhoan = jsonObject.getInt("mataikhoan");
+                                                    TaiKhoan.mataikhoan = jsonObject.getInt("mataikhoan");
                                                     check=true;
                                                     Intent intent = new Intent(MainActivity.this, Home.class);
-                                                    intent.putExtra("mataikhoan",mataikhoan);
                                                     if (cbremember.isChecked()){
                                                         SharedPreferences.Editor editor = sharedPreferences.edit();
                                                         editor.putString("taikhoan",usename);

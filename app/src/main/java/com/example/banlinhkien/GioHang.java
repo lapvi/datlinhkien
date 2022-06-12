@@ -36,6 +36,7 @@ import java.util.Map;
 
 import Adapter.LinhKienGioAdapter;
 import Model.LinhKienGio;
+import Model.TaiKhoan;
 
 public class GioHang extends AppCompatActivity {
     ImageView imgback;
@@ -112,6 +113,7 @@ public class GioHang extends AppCompatActivity {
                             int gia;
                             String anh;
                             int soluong;
+                            int taikhoan;
                             Log.d("TAG", "onResponse: "+response.toString());
                             for(int i=0;i<response.length();i++){
                                 try {
@@ -122,10 +124,13 @@ public class GioHang extends AppCompatActivity {
                                     gia = jsonObject.getInt("gia");
                                     anh = jsonObject.getString("anh");
                                     soluong = jsonObject.getInt("soluong");
-                                    tongtien+=soluong*gia;
-                                    txttongtien.setText(""+tongtien);
-                                    manglinhkien.add(new LinhKienGio(id,ma,ten,anh,gia,soluong));
-                                    linhKienGioAdapter.notifyDataSetChanged();
+                                    taikhoan = jsonObject.getInt("taikhoan");
+                                    if(taikhoan==TaiKhoan.mataikhoan){
+                                        tongtien+=soluong*gia;
+                                        txttongtien.setText(""+tongtien);
+                                        manglinhkien.add(new LinhKienGio(id,ma,ten,anh,gia,soluong));
+                                        linhKienGioAdapter.notifyDataSetChanged();
+                                    }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }

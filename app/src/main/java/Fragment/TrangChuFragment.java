@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import com.android.volley.RequestQueue;
@@ -39,6 +40,7 @@ import java.util.ArrayList;
 
 import Adapter.DanhMucAdapter;
 import Adapter.LinhKienAdapter;
+import Model.TaiKhoan;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,7 +56,6 @@ public class TrangChuFragment extends Fragment implements Adapter.DanhMucAdapter
     ArrayList<DanhMuc> mangdanhmuc;
     DanhMucAdapter danhMucAdapter;
     LinhKienAdapter linhKienAdapter;
-    int mataikhoan;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -102,7 +103,6 @@ public class TrangChuFragment extends Fragment implements Adapter.DanhMucAdapter
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_trang_chu, container, false);
-
         lvlinhkien = (ListView) view.findViewById(R.id.lvlinhkien);
         lvdanhmuc = (RecyclerView) view.findViewById(R.id.lvdanhmuc);
         imgsearch = (ImageView) view.findViewById((R.id.imgsearch));

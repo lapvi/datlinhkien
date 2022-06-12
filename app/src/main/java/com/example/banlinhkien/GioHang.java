@@ -148,6 +148,7 @@ public class GioHang extends AppCompatActivity {
         linhKienGioAdapter.notifyDataSetChanged();
     }
     public void Xoa(View view, int idi){
+        tongtien=0;
         android.app.AlertDialog.Builder alBuilder = new android.app.AlertDialog.Builder(view.getContext() );
         alBuilder.setMessage("Bạn có chắc chắn muốn xoá?");
         alBuilder.setNegativeButton("Có", new DialogInterface.OnClickListener() {

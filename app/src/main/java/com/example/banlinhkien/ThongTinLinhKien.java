@@ -116,7 +116,7 @@ public class ThongTinLinhKien extends AppCompatActivity {
         final String gia = String.valueOf(lk.getGia());
         final String anh = lk.getAnh();
         final String soluong = String.valueOf(txtsl.getText());
-        final String taikhoan = String.valueOf(main.mataikhoan);
+        final String taikhoan = "1";
         if( ten.length ()>0 ) {
             RequestQueue requestQueue = Volley.newRequestQueue(ThongTinLinhKien.this);
             StringRequest stringRequest = new StringRequest(Request.Method.POST, sever.duongdanthemgiohang, new Response.Listener<String>() {

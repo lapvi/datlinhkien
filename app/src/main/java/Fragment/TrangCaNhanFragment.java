@@ -1,5 +1,6 @@
 package Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -10,6 +11,8 @@ import android.widget.PopupMenu;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.banlinhkien.DoiMatKhau;
+import com.example.banlinhkien.MainActivity;
 import com.example.banlinhkien.R;
 
 /**
@@ -84,6 +87,14 @@ public class TrangCaNhanFragment extends Fragment {
                             case R.id.ppSua:
                                 break;
                             case R.id.ppHotro:
+                                break;
+                            case R.id.ppDangxuat:
+                                Intent intent = new Intent(getContext(), MainActivity.class);
+                                startActivity(intent);
+                                break;
+                            case R.id.ppdoimk:
+                                Intent in = new Intent(getContext(), DoiMatKhau.class);
+                                startActivity(in);
                                 break;
                         }
                         return false;

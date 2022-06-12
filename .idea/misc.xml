@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/activity_dang_ky.xml" value="0.17916666666666667" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/activity_doi_mat_khau.xml" value="0.17916666666666667" />
         <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/activity_gio_hang.xml" value="0.18" />
         <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/activity_home.xml" value="0.17916666666666667" />
         <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/activity_main.xml" value="0.17916666666666667" />
@@ -16,6 +17,7 @@
         <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/fragment_trang_chu.xml" value="0.17916666666666667" />
         <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/linh_kien_trong_gio.xml" value="0.17916666666666667" />
         <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/layout/nhap_thong_tin.xml" value="0.17916666666666667" />
+        <entry key="..\:/ANDROID_PROJECT/BanLinhKien/app/src/main/res/menu/menu_popup.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/drawable-v24/bo_vien.xml" value="0.190625" />
         <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/drawable-v24/ic_back.xml" value="0.190625" />
         <entry key="..\:/Users/SIEU THI SO 4G/AndroidStudioProjects/BanLinhKien/app/src/main/res/drawable-v24/vien.xml" value="0.190625" />

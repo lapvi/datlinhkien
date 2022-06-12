@@ -76,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
                                                 matkhau = jsonObject.getString("matkhau");
                                                 if(usename.equals(tendangnhap)&&password.equals(matkhau)){
                                                     TaiKhoan.mataikhoan = jsonObject.getInt("mataikhoan");
+                                                    TaiKhoan.tendangnhap = tendangnhap;
+                                                    TaiKhoan.matkhau = matkhau;
                                                     check=true;
                                                     Intent intent = new Intent(MainActivity.this, Home.class);
                                                     if (cbremember.isChecked()){

@@ -10,4 +10,5 @@ public class sever {
     public static String duongdanxoalinhkiengio = "http://"+localhost+"/banlinhkien/xoalinhkiengio.php";
     public static String duongdangettaikhoan = "http://"+localhost+"/banlinhkien/gettaikhoan.php";
     public static String duongdanthemtaikhoan = "http://"+localhost+"/banlinhkien/themtaikhoan.php";
+    public static String duongdandoimatkhau = "http://"+localhost+"/banlinhkien/doimatkhau.php";
 }

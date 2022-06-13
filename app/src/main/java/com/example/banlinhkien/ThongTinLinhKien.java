@@ -2,6 +2,7 @@ package com.example.banlinhkien;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,14 +17,20 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import Model.LinhKien;
+import Model.LinhKienGio;
 import Model.TaiKhoan;
 
 public class ThongTinLinhKien extends AppCompatActivity {
@@ -39,7 +46,11 @@ public class ThongTinLinhKien extends AppCompatActivity {
     TextView txtsl;
     int soluong=1;
     LinhKien lk=new LinhKien();
-    MainActivity main;
+    Boolean check=false;
+    int idg;
+    int mag;
+    int soluongg;
+    int taikhoang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +77,7 @@ public class ThongTinLinhKien extends AppCompatActivity {
         txtmota.setText(""+lk.getMota());
         imgtru.setEnabled(false);
         SuKienNutBam();
+        getDuLieuLinhKienGio();
 
 
 
@@ -74,7 +86,11 @@ public class ThongTinLinhKien extends AppCompatActivity {
         btnthemgiohang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ThemGioHang();
+                if(check==true){
+                    Update();
+                }else{
+                    ThemGioHang();
+                }
             }
         });
         imgtru.setOnClickListener(new View.OnClickListener() {
@@ -148,5 +164,68 @@ public class ThongTinLinhKien extends AppCompatActivity {
             };
             requestQueue.add(stringRequest);
         }
+    }
+    public void getDuLieuLinhKienGio(){
+        RequestQueue requestQueue = Volley.newRequestQueue(ThongTinLinhKien.this);
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(sever.duongdangetlinhkiengio,
+                new Response.Listener<JSONArray>() {
+                    @SuppressLint("NotifyDataSetChanged")
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        if(response!=null){
+//                            Log.d("TAG", "onResponse: "+response.toString());
+                            for(int i=0;i<response.length();i++){
+                                try {
+                                    JSONObject jsonObject = response.getJSONObject(i);
+                                    mag = jsonObject.getInt("ma");
+                                    taikhoang = jsonObject.getInt("taikhoan");
+                                    if(taikhoang==TaiKhoan.mataikhoan&&mag==lk.getId()){
+                                        idg = jsonObject.getInt("id");
+                                        soluongg = jsonObject.getInt("soluong");
+                                        check=true;
+                                    }
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Checkconnect.ShowToast(ThongTinLinhKien.this,error.toString());
+            }
+        });
+        requestQueue.add(jsonArrayRequest);
+    }
+    public void Update(){
+        int sl = Integer.valueOf(txtsl.getText().toString());
+        final String id = String.valueOf(idg);
+        final String soluong = String.valueOf(soluongg+sl);
+        RequestQueue requestQueue = Volley.newRequestQueue (ThongTinLinhKien.this );
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, sever.duongdanupdategiohang, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.d("scmnd", response);
+                if ("1".equals(response)){
+                    Toast.makeText(ThongTinLinhKien.this, "Thêm giỏ hàng thành công", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                HashMap<String,String> hashMap = new HashMap<String, String> ();
+                hashMap.put("id",id);
+                hashMap.put ( "soluong",soluong );
+                return hashMap;
+            }
+        };
+        requestQueue.add ( stringRequest );
     }
 }

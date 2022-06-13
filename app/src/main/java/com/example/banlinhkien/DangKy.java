@@ -97,7 +97,7 @@ public class DangKy extends AppCompatActivity {
                                 }
                                 if (!check){
                                     Toast.makeText(DangKy.this, "Tên tài khoản đã tồn tại", Toast.LENGTH_LONG).show();
-                                }else if( tendn.length ()>0 && matkhau1.length()>0&&matkhau2.length()>0 && matkhau1.equals(matkhau2)) {
+                                }else if( tendn.length ()>0 && matkhau1.length()>4 && matkhau1.equals(matkhau2)) {
                                     RequestQueue requestQueue = Volley.newRequestQueue(DangKy.this);
                                     StringRequest stringRequest = new StringRequest(Request.Method.POST, sever.duongdanthemtaikhoan, new Response.Listener<String>() {
                                         @Override
@@ -123,7 +123,7 @@ public class DangKy extends AppCompatActivity {
                                     };
                                     requestQueue.add(stringRequest);
                                 }else {
-                                    Toast.makeText(DangKy.this, "Vui lòng kiểm tra lại thông tin đăng ký", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(DangKy.this, "Tên đăng nhập không được để trống và mật khẩu phải trên 4 ký tự", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         }

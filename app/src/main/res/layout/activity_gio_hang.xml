@@ -109,7 +109,7 @@
             android:id="@+id/txttongtien"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="600000"
+            android:text="00000"
             android:textColor="#FF0000"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"

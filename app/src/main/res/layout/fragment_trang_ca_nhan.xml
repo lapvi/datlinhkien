@@ -284,7 +284,7 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:background="#F3ECB4"
             android:gravity="center"
@@ -376,7 +376,7 @@
             android:id="@+id/imgAvata"
             android:layout_width="291dp"
             android:layout_height="231dp"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="48dp"
             android:background="@drawable/vien"
             android:src="@drawable/avata"
             app:layout_constraintEnd_toEndOf="parent"
